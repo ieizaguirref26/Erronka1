@@ -1,8 +1,8 @@
-package logoa;
+package ereduak;
 
 public class Logoa {
 	public void marraztu(Integer aldea) {
-		int tamaina = 4;
+		int tamaina = (aldea + 1) / 2;
 		for (Integer n = tamaina - 1; n > 0; --n) {
 			for (Integer p = (tamaina - 1); p > n; --p)
 				IO.print(" ");

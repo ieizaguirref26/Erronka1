@@ -1,0 +1,24 @@
+:root {
+    /* Koloreak Dark Moderako eta zure eskakizunetarako egokitu dira */
+    --primary-color: #b9b9b9; /* Goiburua/Orri-oina (Gris argiagoa) */
+    --secondary-color: #0fa541; /* Berde distiratsua (Akzentua/Botoiak) */
+    --text-color: #ffffff; /* Testuaren kolorea argia */
+    --light-color: #414141; /* Elementu argien atzealdea (Gris iluna) */
+    --bg-color: #212121; /* Orriaren atzealde nagusia iluna */
+}
+.sarrera {
+    display: grid;
+    gap: 2px;
+}
+
+.div1 { 
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+    
+.videoa {
+    grid-column-start: 2;
+}
+h2{ 
+    color: chocolate;
+}

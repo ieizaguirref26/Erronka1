@@ -1,0 +1,58 @@
+:root {
+    /* Koloreak Dark Moderako eta zure eskakizunetarako egokitu dira */
+    --primary-color: #b9b9b9; /* Goiburua/Orri-oina (Gris argiagoa) */
+    --secondary-color: #0fa541; /* Berde distiratsua (Akzentua/Botoiak) */
+    --text-color: #ffffff; /* Testuaren kolorea argia */
+    --light-color: #414141; /* Elementu argien atzealdea (Gris iluna) */
+    --bg-color: #212121; /* Orriaren atzealde nagusia iluna */
+}
+
+.Heretics:hover { 
+ transition: box-shadow 0.15s ease;
+ box-shadow: 0 0 10px 1px #ffffff;
+}
+
+.G2:hover { 
+transition: box-shadow 0.15s ease;
+ box-shadow: 0 0 15px 1px #c71010;
+}
+
+.Faze:hover {
+    transition: box-shadow 0.15s ease;
+    box-shadow: 0 0 15px 1px #d79209;
+}
+
+.MadLions:hover { 
+
+    transition: box-shadow 0.15s ease;
+ box-shadow: 0 0 15px 1px #d7de0d;
+}
+
+.Taldeak {
+    display: grid;
+    gap: 8px;
+}
+    
+.Heretics {
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.G2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.Faze {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.MadLions {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}

@@ -1,0 +1,282 @@
+:root {
+    /* Koloreak Dark Moderako eta zure eskakizunetarako egokitu dira */
+    --primary-color: #b9b9b9; /* Goiburua/Orri-oina (Gris argiagoa) */
+    --secondary-color: #0fa541; /* Berde distiratsua (Akzentua/Botoiak) */
+    --text-color: #ffffff; /* Testuaren kolorea argia */
+    --light-color: #414141; /* Elementu argien atzealdea (Gris iluna) */
+    --bg-color: #212121; /* Orriaren atzealde nagusia iluna */
+    --cookie-banner-bg: rgb(0, 0, 0); /* Cookie bannerraren atzealdea */
+}
+
+* {
+    margin: 5px ;
+    padding: 5px;
+}
+
+/* Esteka guztietatik azpimarra kentzen da */
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* Oinarrizko body-a atzealde iluna eta testu argia izateko aldatu da */
+body {
+    font-family: Arial;  
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Goiburua eta Nabigazioa */
+header {
+    background-color: var(--primary-color); 
+    color: var(--text-color);
+    padding: 5px ;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 a {
+    color: var(--text-color);
+    text-decoration: none;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    color: var(--bg-color);
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #333333;
+    color: var(--secondary-color);
+}
+
+.HasieraBotoi{ 
+color: var(--bg-color);
+    padding: 10px 15px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.HasieraBotoi:hover { 
+    background-color: #333333;
+    color: var(--secondary-color);
+    list-style: none;
+}
+    
+/* Atal Nagusiak */
+section {
+    padding: 30px; 
+    border-bottom: 3px solid #444444; /*Las lineas que dividen los apartados*/
+}
+
+/* Botoiak */
+.button, button[type="submit"] {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+/*cuando pinchas encima el color que pone*/
+.button:hover, button[type="submit"]:hover {
+    background-color: #00ffd5;
+}
+
+/* Sarrera eta Ordezko Elementuak */
+.video-placeholder, .bracket-placeholder {
+    background-color: var(--light-color);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    color: var(--text-color);
+}
+.partekideak{ 
+    background-color: var(--light-color); 
+  padding: 5px; 
+  border-radius: 20px;
+ 
+  text-align: center;
+  width: 40%;
+  margin: 0 auto; /*Centrarla*/
+}
+
+/* Lehiakideak (Grid) */
+.partekideak  { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: auto; 
+}
+
+
+/* Albisteak */
+.news-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-news {
+    flex: 2;
+    min-width: 300px;
+    background-color: var(--light-color);
+    padding: 15px;
+    border: 1px solid #555555;
+}
+
+.sidebar-news {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-news article {
+    background-color: var(--light-color);
+    padding: 10px;
+    border: 1px solid #555555;
+}
+
+/* Formularioa */
+form label, form input, form select, form textarea {
+    display: block;
+    width: 98%;
+    margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"], form select, form textarea {
+    padding: 8px;
+    border: 1px solid #555555;
+    background-color: #444444;
+    color: var(--text-color);
+}
+
+form fieldset {
+    border: 1px solid #555555;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Orri-oina (Footer) */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--secondary-color); /* Berdea */
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+/* === COOKIE BANNERRA (CSS-N OINARRITUTA) === */
+
+
+
+/* 1. Ezkutatu checkbox-a (HTML-an gehitu behar da) */
+#cookie-toggle {
+    display: none;
+}
+
+/* 2. Cookie Oharraren estilismoa */
+#cookie-banner {
+    background-color: var(--cookie-banner-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 3. Onartu botoia (LABEL izan behar du HTML-an) */
+#accept-cookies {
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+    margin-left: 20px;
+    padding: 18px 19px; 
+    border-radius: 4px;
+    cursor: pointer; 
+    font-weight: bold;
+    display: inline-block; 
+    border: none;
+    transition: background-color 0.1s ease; /* Sakatze-efekturako trantsizioa */
+}
+
+/* 4. KLIK EFEKTUA: Elementua sakatzean kolorez aldatzen da */
+#accept-cookies:active {
+    background-color: #2bff00; /* Berde ilunagoa sakatzean */
+}
+
+/* 5. Mekanismo Magikoa: 'checkbox'-a markatuta dagoenean, ezkutatu hurrengo anai-arreba den div-a */
+#cookie-toggle:checked ~ #cookie-banner {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+
+/* Responsive Design sinplea */
+@media (max-width: 768px) {
+    header, nav ul, .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Mugikorrean cookie bannerra bere edukia zentratzeko */
+    #cookie-banner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #accept-cookies {
+        margin-left: 0;
+        width: 80%;
+    }
+}
+

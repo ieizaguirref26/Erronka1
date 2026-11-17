@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harremanak | GameStop</title>
+        <meta name="deskripzioa" content="Informazioa eskatzeko edo txapelketan parte hartzeko inprimakia.">
+        <link rel="stylesheet" href="../styles/css.css">
+        <link rel="icon" type="image/png" href="../img/icons/favicon-196x196.png">
+    </head>
+    <body>
+        <! Goiko partean agertuko den nabigazio-partea orrialde batetik bestera.>
+        <header>
+            <a href="../index.html"><img src="../img/proxy-image.png" alt="GameStop logo" id="logo" width="260" height="60"></a>
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Hasiera</a></li>
+                </ul>
+            </nav>
+        </header>
+        <! Orrialde honen informazioa.>
+        <main>
+            <section>
+                <h1>Harremanetarako</h1>
+                <! Galdetegia.>
+                <form action="/submit-form" method="post">
+                    <fieldset>
+                        <legend>Helburua</legend>
+                        <select id="helburua" name="helburua" required>
+                            <option value="" disabled selected>Aukeratu...</option>
+                            <option value="informazioa">Informazioa eskatu</option>
+                            <option value="partehartzea">Parte hartzeko eskaera</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datuak</legend>
+                        <label for="izena">Izena* (Nahitaezkoa):</label>
+                        <input type="text" id="izena" name="izena" required placeholder="Eneko Sanchez">
+                        <label for="email">Emaila* (Nahitaezkoa):</label>
+                        <input type="email" id="email" name="email" required placeholder="esanchezu22@fpsanturtzilh.eus">
+                    </fieldset>
+
+                    <label for="mezua">Mezua:</label>
+                    <textarea id="mezua" name="mezua" minlength="20" maxlength="500"></textarea>
+
+                    <button type="submit">Bidali</button>
+                </form>
+            </section>
+        </main>
+        <! Amaierako webaren etiketa.>
+        <footer>
+            <p>&copy; 2026 GameStop.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 30px 20px;
+}
+
+.bracket-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow-x: auto; /* Permite hacer scroll horizontal si la pantalla es pequeña */
+}
+
+.bracket-wrapper h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+/* Contenedor principal de las 7 columnas */
+.bracket {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    min-width: 1050px; /* Evita que las cajas se aplasten en pantallas estrechas */
+}
+
+/* Cada columna (ronda) */
+.round {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.round-title {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Contenedor vertical de los partidos de esa ronda */
+.matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Alinea automáticamente los cruces */
+    flex-grow: 1;
+    gap: 12px;
+}
+
+/* Tarjeta individual de cada enfrentamiento */
+.match {
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    color: #111111;
+}
+
+/* Caja de la Final más ancha en el centro (como en tu imagen) */
+.final-round {
+    flex: 1.6;
+}
+
+.final-match .score {
+    width: 65px;
+}
+
+/* Fecha superior de cada partido */
+.match-date {
+    font-size: 10px;
+    text-align: center;
+    padding: 2px 4px;
+    border-bottom: 1px solid #444;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Fila de cada jugador */
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px 4px 10px;
+    font-size: 13px;
+    color: #111111
+}
+
+.player:first-of-type {
+    border-bottom: 1px solid #eee;
+}
+
+/* Cajita del resultado / marcador (-) */
+.score {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 20px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: #fff;
+}
+h1{
+    text-align: center;
+}

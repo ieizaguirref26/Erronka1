@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>G2 | GameStop</title>
+        <meta name="description" content="Informazioa eskatzeko edo txapelketan parte hartzeko inprimakia.">
+        <link rel="stylesheet" href="../styles/jokalari.css">
+        <link rel="stylesheet" href="../styles/css.css">
+        <link rel="icon" type="image/png" href="../img/icons/favicon-196x196.png">
+    </head>
+    <body>
+        <! Goiko partean agertuko den nabigazio-partea orrialde batetik bestera.>
+        <header>
+            <a href="../index.html">
+                <img src="../img/proxy-image.png" alt="GameStop logo" id="logo" width="260" height="60">
+            </a>
+            <h1>G2ko Jokalariak</h1>
+            
+            <nav>
+                <a href="faze-players.html"HurrengoTaldea">Hurrengo taldea</a>
+                <a href="heretics-players.html" class="AtzekoTaldea">Atzeko taldea</a>
+                <a href="partehartzaileak.html" class="AtzekoTaldea"> Taldeak </a>
+            </nav>
+        </header>
+        <! Orrialde honen informazioa.>
+        <main>
+            <div class="Jokalariak"> 
+                <div class="Jokalaria Jokalaria1">
+                        <img src="../img/jokalariak/3.Jokalari.png" width="350" height="500">
+                    <div class="info">
+                        <h2> Trent </h2>
+                        <p>
+                            <img src="../img/United-stages.png" width="140" height="60">
+                        </p>
+                    </div>
+                </div>
+                <div class="Jokalaria Jokalaria2">
+                        <img src="../img/jokalariak/4.Jokalari.png" width="350" height="500">
+                    <div class="info">
+                        <h2> Jacob Batio </h2>
+                        <p>
+                            <img src="../img/United-stages.png" width="140" height="60">
+                        </p>
+                    </div>
+                </div>
+                <div class="Jokalaria Jokalaria3">
+                    <img src="../img/jokalariak/g2 1.png" width="350" height="500">
+                <div class="info">
+                    <h2> Nakamura </h2>
+                    <p>
+                        <img src="../img/Flag_of_South_Korea.png" width="140" height="60">
+                    </p>
+                </div>
+                </div>
+                 <div class="Jokalaria Jokalaria4">
+                    <img src="../img/jokalariak/g2 2.jpg" width="430" height="480">
+                <div class="info">
+                    <h2> Joanne </h2>
+                    <p>
+                        <img src="../img/francia.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                 <div class="Jokalaria Jokalaria5">
+                    <img src="../img/jokalariak/g2 3.jpg" width="430" height="550">
+                <div class="info">
+                    <h2> Emma </h2>
+                    <p>
+                        <img src="../img/francia.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+                <div class="Jokalaria Jokalaria6">
+                    <img src="../img/jokalariak/g2 4.jpg" width="430" height="550">
+                <div class="info">
+                    <h2> Suneo </h2>
+                    <p>
+                        <img src="../img/Flag_of_South_Korea.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                <div class="Jokalaria Jokalaria7">
+                    <img src="../img/jokalariak/g2 5.jpg" width="430" height="550">
+                <div class="info">
+                    <h2> Jade </h2>
+                    <p>
+                        <img src="../img/canada.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                <div class="Jokalaria Jokalaria8">
+                    <img src="../img/jokalariak/g2 6.jpg" width="430" height="550">
+                <div class="info">
+                    <h2> James </h2>
+                    <p>
+                        <img src="../img/United stages.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+            </div>
+            <! Beheko "ikusi gehiago" botoia.>
+            <button class="extentsioa">ikusi gehiago <span>→</span></button>
+            <! Amaierako webaren etiketa.>
+             <footer>
+            <p>&copy; 2026 GameStop.</p>
+        </footer>
+        </main>
+        <script>
+    const playerCards = Array.from(document.querySelectorAll('.Jokalaria'));
+    const expandButton = document.querySelector('.extentsioa');
+    let expanded = false;
+    function updatePlayers() {
+        playerCards.forEach((card, index) => {
+            const isVisible = expanded || index < 2;
+            card.classList.toggle('ezkutatua', !isVisible);
+        });
+        expandButton.innerHTML = expanded
+            ? 'ikusi gutxiago <span>←</span>'
+            : 'ikusi gehiago <span>→</span>';
+    }
+    expandButton.addEventListener('click', () => {
+        expanded = !expanded;
+        updatePlayers();
+    });
+    updatePlayers();
+</script>
+    </body>
+</html>
+
+

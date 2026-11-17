@@ -1,0 +1,337 @@
+:root {
+  /* Koloreak Dark Moderako eta zure eskakizunetarako egokitu dira */
+  --primary-color: #b9b9b9; /* Goiburua/Orri-oina (Gris argiagoa) */
+  --secondary-color: #0fa541; /* Berde distiratsua (Akzentua/Botoiak) */
+  --text-color: #ffffff; /* Testuaren kolorea argia */
+  --light-color: #414141; /* Elementu argien atzealdea (Gris iluna) */
+  --bg-color: #212121; /* Orriaren atzealde nagusia iluna */
+}
+/* Goiburua eta Nabigazioa */
+nav a {
+    color: var(--bg-color);
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #333333;
+    color: var(--secondary-color);
+}
+
+.HurrengoTaldea {
+    color: var(--bg-color);
+    padding: 10px 15px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.HurrengoTaldea:hover {
+    background-color: #333333;
+    color: var(--secondary-color);
+    list-style: none;
+    
+} 
+
+.AtzekoTaldea{ 
+   color: var(--bg-color);
+    padding: 10px 15px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.AtzekoTaldea:hover{ 
+    background-color: #333333;
+    color: var(--secondary-color);
+    list-style: none;
+}
+
+.Jokalariak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 180px;
+}
+
+.Jokalaria1 { 
+  position:relative; 
+  display: inline-block;
+}
+
+.Jokalaria1 .info{ 
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+  transition: opacity 0.3s ease;
+}
+.Jokalaria1 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria1:hover .info {
+    top: 70%;
+    transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria1:hover img {
+  filter: brightness(80%);
+}
+
+/* Hay que hacer lo mismo para todos los jugadores*/
+
+
+.Jokalaria2 { 
+  position:relative; 
+  display: inline-block;
+}
+
+.Jokalaria2 .info{ 
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+  transition: opacity 0.3s ease;
+}
+.Jokalaria2 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria2:hover .info {
+    top: 70%;
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+.Jokalaria2:hover img {
+  filter: brightness(80%);
+}
+.Jokalaria3{
+  position:relative; 
+  display: inline-block;
+
+}
+.Jokalaria3 .info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+   transition: opacity 0.3s ease;
+}
+.Jokalaria3 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria3:hover .info {
+  top: 70%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria3:hover img {
+  filter: brightness(80%)
+}
+
+.Jokalaria4{
+  position:relative; 
+  display: inline-block;
+
+}
+.Jokalaria4 .info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+   transition: opacity 0.3s ease;
+}
+.Jokalaria4 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria4:hover .info {
+  top: 70%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria4:hover img {
+  filter: brightness(80%)
+}
+
+.Jokalaria5{
+  position:relative; 
+  display: inline-block;
+
+}
+.Jokalaria5 .info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+   transition: opacity 0.3s ease;
+}
+.Jokalaria5 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria5:hover .info {
+  top: 70%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria5:hover img {
+  filter: brightness(80%)
+}
+
+.Jokalaria6{
+  position:relative; 
+  display: inline-block;
+
+}
+.Jokalaria6 .info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+   transition: opacity 0.3s ease;
+}
+.Jokalaria6 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria6:hover .info {
+  top: 70%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria6:hover img {
+  filter: brightness(80%)
+}
+
+.Jokalaria7{
+  position:relative; 
+  display: inline-block;
+
+}
+.Jokalaria7 .info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+   transition: opacity 0.3s ease;
+}
+.Jokalaria7 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria7:hover .info {
+  top: 70%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria7:hover img {
+  filter: brightness(80%)
+}
+
+.Jokalaria8{
+  position:relative; 
+  display: inline-block;
+
+}
+.Jokalaria8 .info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 4;
+  text-shadow: 2px 2px 5px rgb(4, 40, 245);
+
+   transition: opacity 0.3s ease;
+}
+.Jokalaria8 .img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Jokalaria8:hover .info {
+  top: 70%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.Jokalaria8:hover img {
+  filter: brightness(80%)
+}
+
+.ezkutatua {
+  display: none !important;
+}
+
+.extentsioa {
+  display: block;
+  margin: 25px auto;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #111111; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+h2{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}

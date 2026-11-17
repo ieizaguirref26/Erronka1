@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameStop</title>
+        <meta name="description" content="GameStop txapelketako hasiera: berriak, sailkapenak eta lehiakideak.">
+        <link rel="stylesheet" href="styles/css.css">
+        <link rel="icon" type="image/png" href="img/icons/favicon-196x196.png">
+    </head>
+    <body>
+        <! Goiko partean agertuko den nabigazio-partea orrialde batetik bestera.>
+        <header>
+            <a href="index.html">
+                <img src="img/proxy-image.png" alt="GameStop logo" id="logo" width="260" height="60">
+            </a> 
+            
+            <nav> 
+                <ul>
+                    <li>
+                        <a href="pages/sarrera.html">Sarrera</a>
+                    </li>
+                    <li>
+                        <a href="pages/partehartzaileak.html">Parte-hartzaileak</a>
+                    </li>
+                    <li>
+                        <a href="pages/berriak.html">Berriak</a>
+                    </li>
+                    <li>
+                        <a href="pages/clasifikazioa.html">Sailkapena</a>
+                    </li>
+                    <li>
+                        <a href="pages/harremanak.html">Harremanak</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <! Orrialde honen informazioa.>
+        <main>
+            <section id="sarrera">
+                <h1>Txapelketarako Sarrera</h1>
+                <figure>
+                    <div class="video-placeholder"></div>
+                </figure>
+                <p>Munduko txapelketa itzuli da. Ezagutu arauak eta ezaugarriak.</p>
+                <a href="pages/sarrera.html" class="button">Aurkezpena</a>
+            </section>
+            
+            <section id="partehartzaileak">
+                <h1>Parte-hartzaileak</h1>
+                <div class="partekideak">
+                    <h2>
+                      <a href="pages/partehartzaileak.html">
+                        <img src="img/Equipos.png" width="400" height="350" alt="Taldeak">
+                      </a>  
+                    </h2>
+                </div>
+            </section>
+
+            <section id="berriak">
+                <h1>Azken Berriak</h1>
+                <div class="news-container">
+                    <article class="main-news">
+                        <h2>Albiste Garrantzitsuena</h2>
+                        <p>Asteburu honetako partida nagusien iragarpena. Ez galdu!</p>
+                        <a href="pages/berriak.html" class="read-more">Irakurri</a>
+                    </article>
+                    <aside class="sidebar-news">
+                        <article>
+                            <h2>Albiste Laburra</h2>
+                            <p>Emaitzak: Faboritoek aurrera.</p>
+                        </article>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="sailkapena">
+                <h1>Sailkapen Egoera</h1>
+                <a href="pages/clasifikazioa.html" class="button">Sailkapen Osoa</a>
+            </section>
+        </main>
+    <! Cookie-politika pantaila.>
+    <input type="checkbox" id="cookie-toggle">
+    <div id="cookie-banner" role="dialog" aria-live="polite">
+        <p>Cookieak erabiltzen ditugu. Onartu.</p>
+        <label id="accept-cookies" for="cookie-toggle">Onartu</label>
+    </div>
+        <! Amaierako webaren etiketa.>
+        <footer>
+            <address><p>GameStop: <a href="mailto:info@gamestop.com">info@gamestop.com</a></p></address>
+            <div class="social-media">
+                <a href="https://twitter.com/gamestop" target="_blank" aria-label="Twitter">
+                    <img src="img/icons/twitter.3.ico" alt="Twitter" width="22" height="22">Twitter (X)
+                </a>
+                <a href="https://www.youtube.com/gamestop" target="_blank" aria-label="YouTube">
+                    <img src="img/icons/favicon_32x32.png" alt="YouTube" width="25" height="20">YouTube
+                </a>
+                <a href="https://www.facebook.com/GameStop" target="_blank" aria-label="Facebook">
+                    <img src="img/icons/facebook.ico" alt="Facebook" width="22" height="22">Facebook
+                </a>
+                <a href="https://www.instagram.com/gamestop" target="_blank" aria-label="Instagram">
+                    <img src="img/icons/insta.ico" alt="Instagram" width="22" height="22">Instagram
+                </a>
+            </div>
+            <p>&copy; 2026 GameStop.</p>
+        </footer>
+    </body>
+</html>

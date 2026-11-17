@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heretics | GameStop</title>
+        <meta name="description" content="Informazioa eskatzeko edo txapelketan parte hartzeko inprimakia.">
+        <link rel="stylesheet" href="../styles/jokalari.css">
+        <link rel="stylesheet" href="../styles/css.css">
+        <link rel="icon" type="image/png" href="../img/icons/favicon-196x196.png">
+    </head>
+    <body>
+        <! Goiko partean agertuko den nabigazio-partea orrialde batetik bestera.>
+        <header>
+            <a href="../index.html">
+                <img src="../img/proxy-image.png" alt="GameStop logo" id="logo" width="260" height="60">
+            </a>
+            <h1>Hereticsko Jokalariak</h1>
+            
+            <nav>
+                <a href="g2-players.html" class="HurrengoTaldea">Hurrengo taldea</a>
+                <a href="partehartzaileak.html" class="AtzekoTaldea"> Taldeak </a>
+            </nav>
+        </header>
+        <! Orrialde honen informazioa.>
+        <main>
+            <div class="Jokalariak">
+                <div class="Jokalaria Jokalaria1">
+                        <img src="../img/jokalariak/1.Jokalari.png" width="400" height="550">
+                    <div class="info">
+                        <h2> Benjyfishy</h2>
+                        <p>
+                            <img src="../img/Reino-Unido.png" width="150" height="50">
+                        </p>
+                    </div>
+                </div>
+                <div class="Jokalaria Jokalaria2">
+                        <img src="../img/jokalariak/2.Jokalari.png" width="430" height="550" > 
+                    <div class="info">
+                        <h2> Plech </h2>
+                        <p>
+                            <img src="../img/lithuania.png" width="150" height="50">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="Jokalaria Jokalaria3">
+                    <img src="../img/jokalariak/heretics 1.png" width="430" height="550">
+                <div class="info">
+                    <h2> Anna </h2>
+                    <p>
+                        <img src="../img/Flag_of_South_Korea.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                <div class="Jokalaria Jokalaria4">
+                    <img src="../img/jokalariak/heretics 2.png" width="430" height="480">
+                <div class="info">
+                    <h2> Zinedine</h2>
+                    <p>
+                        <img src="../img/francia.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                 <div class="Jokalaria Jokalaria5">
+                    <img src="../img/jokalariak/heretics 3.png" width="430" height="550">
+                <div class="info">
+                    <h2> Nobita </h2>
+                    <p>
+                        <img src="../img/Flag_of_South_Korea.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+                <div class="Jokalaria Jokalaria6">
+                    <img src="../img/jokalariak/heretics 4.png" width="430" height="550">
+                <div class="info">
+                    <h2> Keyla </h2>
+                    <p>
+                        <img src="../img/Reino Unido.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                <div class="Jokalaria Jokalaria7">
+                    <img src="../img/jokalariak/heretics 5.png" width="430" height="550">
+                <div class="info">
+                    <h2> Iroito </h2>
+                    <p>
+                        <img src="../img/Flag_of_South_Korea.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+
+                <div class="Jokalaria Jokalaria8">
+                    <img src="../img/jokalariak/heretics 6.png" width="430" height="550">
+                <div class="info">
+                    <h2> Sellin  </h2>
+                    <p>
+                        <img src="../img/francia.png" width="150" height="50">
+                    </p>
+                </div>
+                </div>
+            </div>
+            v
+            <button class="extentsioa">ikusi gehiago <span>→</span></button>
+            <! Amaierako webaren etiketa.>
+            <footer>
+            <p>&copy; 2026 GameStop.</p>
+        </footer>
+        </main>   
+        <script>
+    const playerCards = Array.from(document.querySelectorAll('.Jokalaria'));
+    const expandButton = document.querySelector('.extentsioa');
+    let expanded = false;
+    function updatePlayers() {
+        playerCards.forEach((card, index) => {
+            const isVisible = expanded || index < 2;
+            card.classList.toggle('ezkutatua', !isVisible);
+        });
+        expandButton.innerHTML = expanded
+            ? 'ikusi gutxiago <span>←</span>'
+            : 'ikusi gehiago <span>→</span>';
+    }
+    expandButton.addEventListener('click', () => {
+        expanded = !expanded;
+        updatePlayers();
+    });
+    updatePlayers();
+</script>
+    </body>
+</html>
